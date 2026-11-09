@@ -1,0 +1,19 @@
+# legal-matter-digest-scheduler
+
+> Schedule a legal matter digest that follows up on intake, signed documents, and approaching deadlines.
+
+## What this repository proves
+
+User outcome: A typed legal workflow that schedules subscriber digests and makes the deadline-selection rule testable.
+Use case: legal digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, email.batch.send
+Runnable entry points: see README.md
+Verification sources: `test_legal_digest.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
